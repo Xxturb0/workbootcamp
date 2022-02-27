@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang=en>
     <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>Biro Jodoh</title>
     </head>
-    <body>
+    <body style="width: 25%;
+    height:25%;
+    margin: 50px auto;
+    margin-top: 75px;
+    background-image: url('jodoh.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;">
+        <center><h1 style="color: red;
+        font-family:'Courier New', Courier, monospace;"><b>Biro Jodoh</b></h1></center>
         <form method="post" action="">
             <div class="mb-3">
-            <div class="alert alert-primary" role="alert">
+            <div class="alert alert-danger" role="alert">
             Nama Jodoh
             </div>
                 <input type="text" name="nama" class="form-control" required>
@@ -18,8 +27,8 @@
             <input type="radio" id="html" name="pria">
             <label for="html">Pria</label><br>
             <input type="radio" id="css" name="wanita">
-            <label for="css">Wanita</label><br>
-            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <label for="css">Wanita</label><br><br>
+            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: red;">
         Submit
         </button>
         </form>
